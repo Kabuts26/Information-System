@@ -1,0 +1,140 @@
+*{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+body{
+	min-height: 100vh;
+}
+
+header{
+	font: 14px Montserrat, sans-serif;
+	line-height: 1.8;
+	position: fixed;
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	transition: 0.5s;
+	padding: 17px 100px;
+}
+
+header.sticky{
+	padding: 17px 100px;
+	background: #fff;
+}
+
+header .title{
+	position: relative;
+	font-weight: 700;
+	color: #fff;
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	transition: 0.6s;	
+}
+
+header ul{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header ul li{
+	position: relative;
+	list-style: none;
+}
+
+header ul li a{
+	position: relative;
+	margin: 0 30px;
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 2px;
+	font-weight: 500px;
+	transition: 0.6s;
+}
+
+.banner{
+	posiiton: relative;
+	width: 100%;
+	height: 10vh;
+	background: #728bd4;
+}
+
+header.sticky .title,
+header.sticky ul li a{
+	color: #000;
+}
+
+.container {
+	background-color: #728bd4;
+	height: 90vh;
+	width: 100vw;
+	font-family: Trebuchet MS;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.edit-container {
+	width: 35%;
+	height: 54%;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 2px 2px 16px gray;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.edit-container h1 {
+	color: #42517f;
+	font-weight: bold;
+	padding: 20px 20px;
+}
+
+.form-input {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+	margin-bottom: 16px;
+}
+
+.form-input label {
+	color: #42517f;
+	font-size: 15px;
+	font-weight: 600;
+	margin-bottom: 8px;
+}
+
+.form-input input {
+	border: none;
+	padding: 12px;
+	background-color: #efefef;
+	border-radius: 4px;
+	transition: all 0.3s ease-in;
+}
+
+.form-input input:focus {
+	outline: none;
+	box-shadow: 0 0 5px rgba(80, 38, 154, 1);
+	transition: all 0.3s ease-in;
+}
+
+.cta-container {
+	display: flex;
+	justify-content: right;
+}
+
+.cta-container button {
+	padding: 12px 18px;
+	font-size: 14px;
+	border: none;
+	color: #fff;
+	background-color: #42517f;
+	border-radius: 4px;
+	font-weight: bold;
+	cursor: pointer;
+}
